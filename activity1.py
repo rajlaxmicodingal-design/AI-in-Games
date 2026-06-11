@@ -16,6 +16,12 @@ model = models.Sequential([
 ])
 
 # Compile the model
+#model.compile(
+#    optimizer='adam',
+#    loss=tf.keras.losses.SparseCategoricalCrossentropy(),
+#    metrics=['accuracy']
+#)
+
 model.compile(optimizer='adam',
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy'])
